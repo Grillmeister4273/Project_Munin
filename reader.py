@@ -21,7 +21,7 @@ def get_image():
     """
     Load the processed image from the specified path.
     """
-    image_path = '/home/moe/munin/imgedit_output.png'  # Standard path of the processed image
+    image_path = '/home/cam/munin/imgedit_output.png'  # Standard path of the processed image
     logging.info(f"Loading image from {image_path}")
     return Image.open(image_path)
     
@@ -47,5 +47,5 @@ def save_text_to_file(text):
 # Pass text to textcf.py script
 def pass_text_to_script():
     logging.info("Passing text to textcf.py script.")
-    os.system('python3 /home/moe/munin/textcf.py temp.txt')
+    os.system('python3 /home/cam/munin/textcf.py temp.txt')
 
