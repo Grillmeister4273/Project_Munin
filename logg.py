@@ -8,7 +8,7 @@ from functools import wraps
 
 # Configure logging
 logging.basicConfig(
-    filename='/home/moe/munin/logs/error.log',
+    filename='/home/cam/munin/logs/error.log',
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
