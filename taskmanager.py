@@ -10,13 +10,13 @@ import picamera
 
 # Configure logging
 logging.basicConfig(
-    filename='/home/moe/munin/logs/taskmanager.log',
+    filename='/home/cam/munin/logs/taskmanager.log',
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 # Load image_params from YAML file
-with open('/home/moe/munin/gt/image_params.yaml', 'r') as file:
+with open('/home/cam/munin/gt/image_params.yaml', 'r') as file:
     image_params = yaml.safe_load(file)['image_params']
 
 # Counter that tracks the current image index
@@ -36,7 +36,7 @@ def process_next_image():
 
     try:
         # Capture the image using rpicam
-        image_path = f"/home/moe/munin/gt/gt{current_image_index:03d}/captured_image.jpg"
+        image_path = f"/home/cam/munin/gt/gt{current_image_index:03d}/captured_image.jpg"
         camera.capture(image_path)
         logging.info(f"Image captured and saved to {image_path}")
 
