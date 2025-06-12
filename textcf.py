@@ -6,7 +6,7 @@ import logging
 
 # Configure logging
 logging.basicConfig(
-    filename='/home/moe/munin/logs/textcf.log',
+    filename='/home/can/munin/logs/textcf.log',
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
